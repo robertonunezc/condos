@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "condos",
+  "info": {
+    "singularName": "condo",
+    "pluralName": "condos",
+    "displayName": "Condo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "houses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::house.house",
+      "mappedBy": "condo"
+    }
+  }
+}
